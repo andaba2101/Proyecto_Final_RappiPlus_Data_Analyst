@@ -37,12 +37,14 @@ Durante el proyecto logré:
 ## 🗺️ Flujo general del análisis
 
 | Etapa | Pregunta de negocio | Resultado |
+|---|---|---|
 | 1. Calidad de datos | ¿Podemos confiar en los datos? | Datasets limpios y auditables |
 | 2. Rentabilidad | ¿El negocio genera ganancias? | KPIs de revenue, costo, marketing y profit |
 | 3. Funnel | ¿Dónde se pierden los usuarios? | Etapas de conversión y mayor abandono |
 | 4. Cohortes | ¿Los usuarios regresan? | Retención semanal por cohorte |
 | 5. Experimento A/B | ¿Los cambios funcionan? | Decisión estadística y recomendación |
 | 6. Dashboard | ¿Cómo comunicar los resultados? | Dashboard ejecutivo e interactivo |
+
 
 ---
 
