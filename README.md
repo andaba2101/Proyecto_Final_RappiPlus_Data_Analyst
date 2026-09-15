@@ -51,6 +51,7 @@ Durante el proyecto logré:
 ## 🛠️ Herramientas utilizadas
 
 | Herramienta | Uso dentro del proyecto |
+|---|---|
 | Python | Limpieza, transformación, análisis exploratorio y prueba estadística |
 | Pandas | Manipulación, validación y estructuración de datasets |
 | NumPy | Tratamiento de datos y operaciones numéricas |
@@ -71,6 +72,7 @@ El proyecto integró datos de pedidos, catálogo de productos, inversión en mar
 Cada fila representa un pedido realizado dentro de la plataforma.
 
 | Columna | Tipo | Descripción |
+|---|---|---|
 | `id_pedido` | Categórica | Identificador único del pedido |
 | `id_usuario` | Categórica | Identificador del usuario |
 | `fecha_hora_pedido` | Fecha | Fecha en que se realizó el pedido |
@@ -89,6 +91,7 @@ Cada fila representa un pedido realizado dentro de la plataforma.
 Cada fila representa un producto disponible en la plataforma.
 
 | Columna | Tipo | Descripción |
+|---|---|---|
 | `nombre_producto` | Categórica | Nombre del producto |
 | `categoria_producto` | Categórica | Categoría a la que pertenece |
 | `costo_unitario` | Numérica | Costo por unidad para el negocio |
@@ -99,6 +102,7 @@ Cada fila representa un producto disponible en la plataforma.
 Cada fila representa una inversión de marketing realizada por país y canal.
 
 | Columna | Tipo | Descripción |
+|---|---|---|
 | `fecha` | Fecha | Fecha de ejecución de la inversión |
 | `pais` | Categórica | País donde se realizó la campaña |
 | `id_campaña` | Categórica | Identificador de la campaña |
@@ -110,6 +114,7 @@ Cada fila representa una inversión de marketing realizada por país y canal.
 Esta tabla registra las interacciones de los usuarios dentro de la plataforma y fue utilizada para construir el funnel de conversión.
 
 | Columna | Tipo | Descripción |
+|---|---|---|
 | `id_usuario` | Categórica | Identificador único del usuario |
 | `id_sesion` | Categórica | Identificador único de la sesión |
 | `nombre_evento` | Categórica | Evento realizado por el usuario |
@@ -126,6 +131,7 @@ Estas tablas fueron utilizadas para analizar el comportamiento de los usuarios d
 ### Tabla `users`
 
 | Columna | Tipo | Descripción |
+|---|---|---|
 | `id_usuario` | Categórica | Identificador único del usuario |
 | `fecha_registro` | Fecha | Fecha de registro |
 | `pais` | Categórica | País de origen |
@@ -166,6 +172,7 @@ Inicialmente evalué la calidad de los tres datasets principales: pedidos, catá
 En el dataset original de pedidos identifiqué:
 
 | Indicador | Resultado |
+|---|---:|
 | Registros iniciales de pedidos | 25.100 |
 | Pedidos únicos originales | 25.000 |
 | Registros duplicados detectados | 100 |
@@ -202,6 +209,7 @@ Después de limpiar los datos, relacioné la tabla de pedidos con el catálogo m
 Las métricas principales utilizadas fueron:
 
 | KPI | Fórmula |
+|---|---|
 | Revenue total | `SUM(monto_total)` |
 | Costo de productos | `cantidad × costo_unitario` |
 | Gasto total en marketing | `SUM(gasto)` |
@@ -256,6 +264,7 @@ El proceso consistió en:
 Los resultados mostraron un patrón de retención cercano al **40%** durante las primeras semanas.
 
 | Métrica | Interpretación |
+|---|---|
 | Retención aproximada | Cerca de 40% |
 | Abandono aproximado | Cerca de 60% |
 | Periodo analizado | Primeras cuatro semanas después del registro |
@@ -277,12 +286,14 @@ Se aplicó un **Z-test de dos proporciones** con un nivel de significancia de 5%
 ### Resultados del experimento
 
 | Métrica | Grupo control | Grupo tratamiento |
+|---|---:|---:|
 | Usuarios convertidos | 779 | 820 |
 | Usuarios totales | 4.965 | 5.035 |
 | Tasa de conversión | 15,69% | 16,29% |
 | Diferencia de conversión | — | 0,60 puntos porcentuales |
 
 | Resultado estadístico | Valor |
+|---|---:|
 | Estadístico Z | -0,81328 |
 | Valor p | 0,41606 |
 | Nivel de significancia | 0,05 |
