@@ -407,6 +407,6 @@ dashboard/RappiPlus_Dashboard.pbix
 
 
 
-**[Tu nombre completo]**
+**Andrés David Bahamon Saenz**
 
 Proyecto final desarrollado como parte de la formación en análisis de datos.
