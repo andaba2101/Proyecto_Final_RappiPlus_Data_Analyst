@@ -1,5 +1,5 @@
 # Proyecto_Final_RappiPlus_Data_Analyst
-Proyecto Final. RappiPlus: De datos a decisiones de negocio
+Sprint 12 | Proyecto Final. RappiPlus: De datos a decisiones de negocio
 
 # Proyecto 11: Dashboard de análisis comercial de la plataforma de rappi | RappiPlus: de datos a decisiones de negocio
 
